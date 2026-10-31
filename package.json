@@ -11,9 +11,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build && node .github/scripts/write-root-deploy-config.mjs",
-    "start": "turbo run start",
+    "dev": "node init && turbo run dev",
+    "build": "node init && turbo run build && node .github/scripts/write-root-deploy-config.mjs",
+    "start": "node init && turbo run start",
     "preview": "turbo run preview",
     "deploy": "turbo run deploy",
     "deploy:cloudflare": "turbo run db:migrate:remote --filter=ai-broker-web && wrangler deploy",
