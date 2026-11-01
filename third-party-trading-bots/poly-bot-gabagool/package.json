@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node init && ts-node src/index.ts",
     "redeem": "ts-node src/redeem.ts",
     "redeem:holdings": "ts-node src/redeem-holdings.ts",
     "balance:log": "ts-node src/balance-logger.ts",
