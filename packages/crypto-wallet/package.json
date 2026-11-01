@@ -42,7 +42,7 @@
     "server"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "type-check": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
