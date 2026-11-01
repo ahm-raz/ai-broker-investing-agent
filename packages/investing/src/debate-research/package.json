@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node main.js",
-    "dev": "nodemon main.js",
+    "start": "node init && node main.js",
+    "dev": "node init && nodemon main.js",
     "test": "jest",
     "health-check": "node health_check.js",
     "lint": "eslint .",

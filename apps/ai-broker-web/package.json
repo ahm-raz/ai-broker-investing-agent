@@ -6,9 +6,9 @@
   "author": "vtempest",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vinext dev\" \"wait-on http://localhost:3000 && opener http://localhost:3000\"",
-    "build": "vinext build",
-    "start": "vinext start",
+    "dev": "node init && concurrently \"vinext dev\" \"wait-on http://localhost:3000 && opener http://localhost:3000\"",
+    "build": "node init && vinext build",
+    "start": "node init && vinext start",
     "preview": "vinext build && vite preview",
     "deploy": "bun run db:migrate:remote && vinext-cloudflare deploy",
     "type-check": "tsc --noEmit",

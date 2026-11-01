@@ -62,7 +62,7 @@
     "THIRD_PARTY_NOTICES.md"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "node init && vite build",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:debate": "vitest run src/trading-agents/__tests__/debate-agents.test.ts",
